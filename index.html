@@ -12,21 +12,21 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333333;
+            background-color: #333333;
+            color: #e0e0e0;
         }
 
         header {
-            background: linear-gradient(135deg, #f4a261, #e76f51);
-            padding: 40px;
+            background: linear-gradient(135deg, #2a9d8f, #264653);
+            padding: 50px;
             text-align: center;
             color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
         header h1 {
             font-family: 'Space Mono', monospace;
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin: 0;
             letter-spacing: 2px;
         }
@@ -35,8 +35,8 @@
             display: flex;
             justify-content: center;
             padding: 20px 0;
-            background-color: #264653;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
         nav a {
@@ -62,7 +62,7 @@
         }
 
         nav a:hover {
-            color: #ff7f50;
+            color: #2a9d8f;
         }
 
         nav a:hover::after {
@@ -73,7 +73,7 @@
         .hero-section {
             text-align: center;
             padding: 100px 20px;
-            background: linear-gradient(135deg, #f4a261, #e76f51);
+            background: linear-gradient(135deg, #264653, #1e1e1e);
             color: #ffffff;
         }
 
@@ -95,7 +95,7 @@
             max-width: 80%;
             height: auto;
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease;
         }
 
@@ -108,7 +108,7 @@
             flex-wrap: wrap;
             justify-content: center;
             padding: 60px 20px;
-            background-color: #e9c46a;
+            background-color: #444444;
         }
 
         .services h2 {
@@ -116,31 +116,47 @@
             text-align: center;
             margin-bottom: 40px;
             font-family: 'Space Mono', monospace;
-            font-size: 2rem;
-            color: #264653;
+            font-size: 2.5rem;
+            color: #2a9d8f;
         }
 
         .services p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             max-width: 800px;
             margin: 20px auto;
             line-height: 1.8;
-            text-align: center;
-            color: #333333;
+            text-align: left;
+            color: #e0e0e0;
+        }
+
+        .services .service-block {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #333333;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .services .service-block h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.8rem;
+            color: #ff7f50;
+            margin-bottom: 15px;
         }
 
         .contact {
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
             background-color: #2a9d8f;
             color: #ffffff;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
         }
 
         .contact h2 {
             margin-bottom: 25px;
             font-family: 'Space Mono', monospace;
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #ff7f50;
         }
 
@@ -150,9 +166,9 @@
         }
 
         footer {
-            background-color: #264653;
+            background-color: #1e1e1e;
             color: #ffffff;
-            padding: 15px 0;
+            padding: 20px 0;
             text-align: center;
             margin-top: 20px;
             font-size: 0.9rem;
@@ -185,11 +201,29 @@
 
     <section id="our-services" class="services">
         <h2>Our Services</h2>
-        <p><strong>Google Ads:</strong> At Shepherd Marketing, we specialize in driving performance through precisely targeted Google Ads. Our expert team works to ensure your business ranks at the top of relevant searches, reaching the right audience at the right time. Whether it’s optimizing bidding strategies, selecting effective keywords, or crafting compelling ad copy, we tailor every aspect of the campaign to maximize your return on investment.</p>
+        <div class="service-block">
+            <h3>Google Ads</h3>
+            <p>At Shepherd Marketing, we specialize in driving performance through precisely targeted Google Ads. Our expert team works to ensure your business ranks at the top of relevant searches, reaching the right audience at the right time. Whether it’s optimizing bidding strategies, selecting effective keywords, or crafting compelling ad copy, we tailor every aspect of the campaign to maximize your return on investment.</p>
+            <p>We focus on understanding the local market and your specific business goals, ensuring that every dollar spent on Google Ads delivers measurable results. From search ads to display campaigns, we create comprehensive strategies that increase visibility and drive traffic to your business, whether online or in your local area.</p>
+        </div>
 
-        <p><strong>Social Media Ads:</strong> In addition to Google Ads, we manage end-to-end advertising solutions across social media platforms like X (formerly Twitter), Instagram, and TikTok. Our social media strategies are designed to build brand awareness, engage audiences, and drive conversions. From creative content development to hyper-targeted ad placements, we ensure that your brand connects with users where they spend most of their time.</p>
+        <div class="service-block">
+            <h3>Instagram Ads</h3>
+            <p>Instagram has become a powerful platform for businesses to connect with their audience. At Shepherd Marketing, we create visually stunning and highly targeted Instagram ad campaigns that resonate with your potential customers. Whether you're promoting products, services, or special events, we help you reach the right people in your community.</p>
+            <p>We take advantage of Instagram's rich targeting options, including demographics, interests, and behaviors, to ensure your ads are seen by those most likely to engage. From story ads to carousel posts, we craft creative content that not only captures attention but also drives conversions, helping your business grow within your local area.</p>
+        </div>
 
-        <p><strong>Local Targeting:</strong> One of our standout offerings is local radius targeting and custom audience segmentation. We narrow down your ad reach based on geographic proximity to your business and filter audiences according to specific interests, behaviors, and search patterns. Whether you’re aiming for foot traffic to a brick-and-mortar store or targeting niche groups online, our data-driven approach ensures your ads reach those most likely to convert.</p>
+        <div class="service-block">
+            <h3>Social Media Ads</h3>
+            <p>In addition to Google Ads and Instagram, we manage end-to-end advertising solutions across other social media platforms like X (formerly Twitter) and TikTok. Our social media strategies are designed to build brand awareness, engage audiences, and drive conversions. From creative content development to hyper-targeted ad placements, we ensure that your brand connects with users where they spend most of their time.</p>
+            <p>Our approach is tailored to the unique dynamics of each platform, ensuring that your message resonates with your audience and aligns with your business objectives. By leveraging advanced targeting techniques, we help you reach your community more effectively, whether you're aiming to increase online sales or drive foot traffic to your store.</p>
+        </div>
+
+        <div class="service-block">
+            <h3>Local Targeting</h3>
+            <p>One of our standout offerings is local radius targeting and custom audience segmentation. We narrow down your ad reach based on geographic proximity to your business and filter audiences according to specific interests, behaviors, and search patterns. Whether you’re aiming for foot traffic to a brick-and-mortar store or targeting niche groups online, our data-driven approach ensures your ads reach those most likely to convert.</p>
+            <p>We understand the importance of community in local business success. That's why we focus on creating ads that speak directly to your local audience, building trust and encouraging loyalty. Our local targeting strategies help you connect with customers in your area, driving both online engagement and in-person visits.</p>
+        </div>
     </section>
 
     <section id="contact" class="contact">
@@ -204,3 +238,4 @@
 </body>
 
 </html>
+
