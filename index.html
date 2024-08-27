@@ -6,108 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shepherd.Tools - Paid Ads Marketing Agency</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Mono:wght@700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #121212;
+            color: #e0e0e0;
         }
 
         header {
-            background-color: #2c3e50;
-            padding: 20px;
+            background: linear-gradient(135deg, #2f2f2f, #121212);
+            padding: 40px;
             text-align: center;
-            color: white;
+            color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
         }
 
         header h1 {
+            font-family: 'Space Mono', monospace;
+            font-size: 3rem;
             margin: 0;
+            letter-spacing: 2px;
         }
 
         nav {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
         }
 
         nav a {
-            margin: 0 15px;
-            color: white;
+            margin: 0 20px;
+            color: #ffffff;
             text-decoration: none;
             font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #ffffff;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #76ff03;
+        }
+
+        nav a:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
         }
 
         .hero-section {
             text-align: center;
-            padding: 50px 20px;
-            background-color: #2980b9;
-            color: white;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #3a3a3a, #1a1a1a);
+            color: #ffffff;
         }
 
         .hero-section h2 {
+            font-family: 'Space Mono', monospace;
             font-size: 2.5rem;
             margin-bottom: 20px;
         }
 
         .hero-section p {
             font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
         }
 
         .hero-section img {
-            margin-top: 20px;
-            max-width: 100%;
+            margin-top: 30px;
+            max-width: 80%;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-section img:hover {
+            transform: scale(1.05);
         }
 
         .services {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
-            background-color: #ecf0f1;
+            padding: 60px 20px;
+            background-color: #1e1e1e;
         }
 
         .services h2 {
             width: 100%;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            font-family: 'Space Mono', monospace;
+            font-size: 2rem;
+            color: #76ff03;
         }
 
         .services p {
             font-size: 1rem;
             max-width: 800px;
-            margin: 10px auto;
-            line-height: 1.6;
+            margin: 20px auto;
+            line-height: 1.8;
+            text-align: center;
         }
 
         .contact {
             text-align: center;
-            padding: 20px;
-            background-color: #ecf0f1;
+            padding: 40px 20px;
+            background-color: #121212;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.7);
         }
 
         .contact h2 {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
+            font-family: 'Space Mono', monospace;
+            font-size: 2rem;
+            color: #76ff03;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px 0;
+            background-color: #0d0d0d;
+            color: #666666;
+            padding: 15px 0;
             text-align: center;
             margin-top: 20px;
+            font-size: 0.9rem;
         }
 
         footer p {
             margin: 0;
-            font-size: 0.9rem;
         }
     </style>
 </head>
