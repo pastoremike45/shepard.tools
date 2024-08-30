@@ -549,6 +549,68 @@
         .footer p {
             margin: 0;
         }
+
+        /* New FAQ Styles */
+        .faq-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #444444;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .faq-title {
+            font-size: 2rem;
+            text-align: center;
+            color: #2a9d8f;
+            margin-bottom: 20px;
+        }
+
+        .faq-category {
+            font-size: 1.5rem;
+            margin: 20px 0 10px;
+            color: #ff7f50;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            background-color: #2a9d8f;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: '\002B'; /* plus sign */
+            position: absolute;
+            right: 20px;
+            font-size: 1.5rem;
+        }
+
+        .faq-answer {
+            display: none;
+            font-size: 0.9rem;
+            background-color: #555555;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #e0e0e0;
+        }
+
+        .faq-question.active::after {
+            content: '\2212'; /* minus sign */
+        }
+
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
     </style>
 </head>
 
@@ -664,19 +726,101 @@
 
     <div class="divider"></div>
 
-    <section id="faq" class="faq">
-        <h2>Frequently Asked Questions</h2>
+    <!-- Updated FAQ Section -->
+    <section id="faq" class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <!-- General Questions -->
+        <div class="faq-category">General Questions</div>
+
         <div class="faq-item">
-            <h3>FAQ Question 1</h3>
-            <p>Placeholder text for an answer to a frequently asked question. Address common concerns or inquiries potential clients might have.</p>
+            <div class="faq-question">What services does Shepherd Marketing offer?</div>
+            <div class="faq-answer">We specialize in paid advertising through platforms like Google Ads, Instagram, Facebook, X (formerly Twitter), and TikTok. Our services include ad creation, campaign management, local targeting, and performance tracking.</div>
         </div>
+
         <div class="faq-item">
-            <h3>FAQ Question 2</h3>
-            <p>Placeholder text for an answer to a frequently asked question. Address common concerns or inquiries potential clients might have.</p>
+            <div class="faq-question">How do paid ads work?</div>
+            <div class="faq-answer">Paid ads work by placing your business in front of potential customers through targeted advertising on search engines and social media. You pay for these ads based on clicks (Pay-Per-Click) or impressions, helping you reach your desired audience effectively.</div>
         </div>
+
         <div class="faq-item">
-            <h3>FAQ Question 3</h3>
-            <p>Placeholder text for an answer to a frequently asked question. Address common concerns or inquiries potential clients might have.</p>
+            <div class="faq-question">Why should I choose Shepherd Marketing over other agencies?</div>
+            <div class="faq-answer">Shepherd Marketing offers personalized service, competitive pricing, and a deep understanding of local markets. We’re committed to maximizing your return on investment (ROI) through data-driven strategies.</div>
+        </div>
+
+        <!-- Google Ads Specific Questions -->
+        <div class="faq-category">Google Ads</div>
+
+        <div class="faq-item">
+            <div class="faq-question">How much does it cost to run Google Ads?</div>
+            <div class="faq-answer">The cost of running Google Ads varies based on your budget, the competitiveness of your industry, and the keywords you’re targeting. We’ll work with you to set a budget that meets your goals and maximizes ROI.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What is Pay-Per-Click (PPC) advertising?</div>
+            <div class="faq-answer">PPC is an advertising model where you only pay when someone clicks on your ad. It’s a cost-effective way to drive traffic to your website, as you’re only paying for actual visits, not just impressions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How does Shepherd Marketing optimize my Google Ads campaign?</div>
+            <div class="faq-answer">We use a combination of keyword research, ad copy testing, audience targeting, and ongoing performance analysis to ensure your campaign is delivering the best possible results.</div>
+        </div>
+
+        <!-- Local Targeting & Specific Services -->
+        <div class="faq-category">Local Targeting & Services</div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do you target local customers with ads?</div>
+            <div class="faq-answer">We use geo-targeting to focus your ads on specific locations, such as your town or neighborhood, ensuring that your ad spend is concentrated on reaching customers who are most likely to visit your store or use your services.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can you help with social media ads as well?</div>
+            <div class="faq-answer">Yes, we manage ad campaigns across various social media platforms, including Instagram, Facebook, X, and TikTok. We tailor each campaign to the unique dynamics of the platform and your specific business goals.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you provide custom reporting?</div>
+            <div class="faq-answer">Absolutely. We provide detailed reports that track key metrics like clicks, conversions, and cost per acquisition, giving you full transparency into the performance of your campaigns.</div>
+        </div>
+
+        <!-- Process & Onboarding -->
+        <div class="faq-category">Process & Onboarding</div>
+
+        <div class="faq-item">
+            <div class="faq-question">What is the process for starting a campaign with Shepherd Marketing?</div>
+            <div class="faq-answer">The process begins with a consultation to understand your business goals. We then develop a tailored ad strategy, set up your campaigns, and provide ongoing management and optimization.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How long does it take to see results?</div>
+            <div class="faq-answer">You can typically start seeing results from your campaigns within a few days of launch, but optimal results usually develop over a few weeks as we refine targeting and ad copy.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is there a minimum budget required to start?</div>
+            <div class="faq-answer">While there’s no strict minimum, we recommend a budget that’s sufficient to gather meaningful data and make a significant impact. We’ll work with you to determine a budget that aligns with your goals.</div>
+        </div>
+
+        <!-- Billing & Contracts -->
+        <div class="faq-category">Billing & Contracts</div>
+
+        <div class="faq-item">
+            <div class="faq-question">How is billing handled?</div>
+            <div class="faq-answer">Billing is typically handled on a monthly basis, with charges based on your ad spend and any agreed-upon management fees. We provide clear, upfront pricing with no hidden fees.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do I need to sign a long-term contract?</div>
+            <div class="faq-answer">No, we offer flexible month-to-month contracts. We believe in earning your business through results, not locking you into long-term commitments.</div>
+        </div>
+
+        <!-- Success & Case Studies -->
+        <div class="faq-category">Success & Case Studies</div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can you share examples of past client successes?</div>
+            <div class="faq-answer">Yes, we have case studies that showcase how we’ve helped other businesses achieve their advertising goals. Contact us for more information or visit our portfolio section.</div>
         </div>
     </section>
 
@@ -691,6 +835,20 @@
     <footer class="footer">
         <p>&copy; 2024 Shepherd Marketing - All Rights Reserved</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                item.classList.toggle('active');
+                let answer = item.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
